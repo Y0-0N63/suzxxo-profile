@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@suzxxo</title>
+  <link rel="stylesheet" href="./profile.css">
+  <link rel="icon" href="./profileImg.png">
+</head>
+<body>
+  <header></header>
+
+  <main>
+    <div></div>
+    <div class="profile-box">
+      <div class="info">
+        <div class="info-img">
+          <img src="./profileImg.png">
+        </div>
+        <div class="info-id"><b>@suzxxo</b></div>
+        <div class="info-name">수저</div>
+      </div>
+
+      <div class="musical">
+        <b>박경호 조성필</b><br>
+        ^ 페어충<br><br>
+        
+        🔥최하람🔥<br>
+        김서환 김수연 곽민수 박선영 신주협 양지원 이진혁(ㅜㅜ?)<br><br>
+
+        〰️스치면 애배〰️
+      </div>
+      <div class="idol">
+        82MAJOR 박석준, P1Harmony 최지웅<br>
+        + N.Flying 서동성<br><br>
+        
+        위 그룹 및 멤버 이야기 자주합니다!<br>
+        알페스 언급 多 멜쭌, 웅양
+      </div>
+      <div class="rps">
+        <div class="rps-first" onclick="toggleBox(this)">
+          <span class="toggle-size">동인 관련</span>
+          <img src="./icon-up.png" class="arrow rotate">
+        </div>
+        <div class="content hide">
+          주력<br>
+          🔥경필코사🔥<br>
+          호두렘시니무니<br><br>
+
+          📌ㅈㅅㅍ ㅊㅎㄹ 필모왼 고정<br>
+          직멘만 아니면 리버스 본다고 죽지는 않습니다.
+        </div>
+      </div>
+      <div class="etc">
+        <div class="etc-first" onclick="toggleBox(this)">
+          <span class="toggle-size">그 외</span>
+          <img src="./icon-up.png" class="arrow rotate">
+        </div>
+        <div class="content hide">
+          말에 필터링이 조금 없는 편입니다. 주의 요망.<br>
+          지뢰 알아서 흐린 눈 합니다. 거배 딱히 없음!
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </main>
+
+  <footer></footer>
+  <script>
+    function toggleBox(header){
+
+      const content = header.nextElementSibling;
+      const arrow = header.querySelector(".arrow");
+
+      content.classList.toggle("hide");
+      arrow.classList.toggle("rotate");
+    }
+  </script>
+</body>
+</html>

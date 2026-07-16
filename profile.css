@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: pretendard;
+}
+
+body {
+  background-color: #b1c5df;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-box {
+  width: 35%;
+  background-color: #f4f9fe;
+  padding: 50px 0;
+  
+  margin: 25px;
+  border-radius: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 15px;
+}
+
+.info-img img {
+  width: 100px;
+  border-radius: 35px;
+  object-fit: cover;
+}
+
+.musical, .idol, .rps, .etc {
+  background-color: white;
+  width : 80%;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.055);
+  font-size: 13.5px;
+  padding: 13px 0;
+  line-height: 1.6;      
+}
+
+.rps-first,
+.etc-first {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    transition: transform .3s;
+}
+
+.arrow.rotate {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.content {
+  margin-top: 10px;
+  padding: 0 15px;
+}
+
+.content.hide {
+  display: none;
+}
+
+.toggle-size {
+  font-size: 15px;
+}
